@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Admin</title>
+</head>
+<body id="body-pd">
+    <!-- ===== HEADER ===== -->
+     <header class="header" id="header">
+      <div class="header__toggle">
+          <i class='bx bx-menu' id="menu-toggle"></i>
+      </div>
+    </header>
+    
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div class="nav__content">
+          <a href="index.html" class="nav__logo">
+            <i class='bx bx-layer nav__logo-icon'></i>
+            <span class="nav__logo-text">Dashboard</span>
+          </a>
+          <ul class="nav__list">
+            <li>
+              <a href="products.html" class="nav__link">
+                <i class='bx bx-folder nav__icon'></i>
+                <span class="nav__text">Product</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href="categories.html" class="nav__link">
+                <i class="bx bx-category-alt nav__icon"></i>
+                <span class="nav__text">Category</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="nav__link nav__logout">
+          <i class='bx bx-log-out nav__icon' ></i>
+          <span class="nav__text">Logout</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main--content">
+      <div class="tabular--wrapper">
+        <!-- ===== BREADCRUMB ===== -->
+        <div class="breadcrumb">
+          <a href="index.html">Dashboard</a>  
+          <i class='bx bx-chevron-right'></i>
+          <a href="categories.html">Occasion</a>
+        </div>
+        <!-- ===== CATEGORY TABLE ===== -->
+        <div>
+          <a href="addcategories.html">
+            <button class="btn btn-add">Add Occasion</button>
+          </a> 
+        </div>
+        <form class="form__search" action="" method="post">
+          <div class="search--box">
+            <i class='bx bx-search' ></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </form>
+        <div class="table--container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Action</th>
+              </tr>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Expenses</td>
+                <td>
+                  <div>
+                    <a href="editcategories.html" class="btn-edit">Edit</a>
+                    <a href="subcategories.html" class="btn-view">View</a>
+                    <a href="" class="btn-delete">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Expenses</td>
+                <td>
+                  <div>
+                    <a href="" class="btn-edit">Edit</a>
+                    <a href="subcategories.html" class="btn-view">View</a>
+                    <a href="" class="btn-delete">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Expenses</td>
+                <td>
+                  <div>
+                    <a href="" class="btn-edit">Edit</a>
+                    <a href="subcategories.html" class="btn-view">View</a>
+                    <a href="" class="btn-delete">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Expenses</td>
+                <td>
+                  <div>
+                    <a href="" class="btn-edit">Edit</a>
+                    <a href="subcategories.html" class="btn-view">View</a>
+                    <a href="" class="btn-delete">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Expenses</td>
+                <td>
+                  <div>
+                    <a href="" class="btn-edit">Edit</a>
+                    <a href="subcategories.html" class="btn-view">View</a>
+                    <a href="" class="btn-delete">Delete</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Total Categories: 5/50</td>
+              </tr>
+            </tfoot>
+            </thead>
+          </table>
+        </div>
+        <div class="pagination">
+          <a href="">
+            <i class='bx bx-left-arrow-alt'></i>
+          </a>
+          <div class="pagination__content">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+          </div>
+          <a href="">
+            <i class='bx bx-right-arrow-alt'></i>
+          </a>
+        </div>
+      </div>
+    </main>
+    
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/index.js"></script>
+</body>
+</html>
