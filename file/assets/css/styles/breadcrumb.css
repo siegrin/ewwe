@@ -1,8 +1,0 @@
-.breadcrumb a{
-    color: var(--black-color);
-    transition: .3s;
-  }
-  
-  .breadcrumb a:hover{
-    color: var(--first-color);
-  }
